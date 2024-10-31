@@ -189,4 +189,18 @@ Use the `run_ros_nvidia_container.sh` file to run the docker container.
 
 ## 4. Open with VS-Code Dev Container:
 
-You can use vscode remote extention to open this container 
+You can use vscode remote extention to open this container.
+
+1. Open VS-Code and Install `Install the Dev Containers` extension.
+
+2. Open Your Project: Open the folder that contains your .devcontainer directory.
+
+3. Reopen in Container:
+    - Once you have the folder open in VS Code, you can reopen it in a container by clicking on the green icon in the bottom left corner of the VS Code window.
+    - From the menu, select Remote-Containers: Reopen in Container. This option will build the Docker image defined in your Dockerfile and start a new container based on it.
+
+4. Build and Start the Container: 
+    - VS Code will automatically read the configuration from the .devcontainer/Dockerfile and .devcontainer.json files, build the container, and open a new window connected to it. You can monitor the output in the terminal that appears in the bottom panel.
+
+5. Access the Terminal: 
+    - Once the container is running, you can open a terminal inside the container by going to Terminal > New Terminal. This terminal will give you access to the environment set up in your Docker container.
