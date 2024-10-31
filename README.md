@@ -169,6 +169,12 @@ Use the `run_ros_nvidia_container.sh` file to run the docker container.
 
 - ⚠️ Edit the image name in `run_ros_nvidia_container.sh` file (**line: 36)** to the image name you chose to build.
 
+- ⚠️ configuring X11 permissions for Docker:
+    ```bash
+    xhost +local:docker
+    ```
+    Running this command is very important before running the container to run GUI applications inside a Docker container and display them on your host's screen.
+
 - Grant executable permission:
     ```bash
     chmod +x ~/run_ros_nvidia_container.sh
