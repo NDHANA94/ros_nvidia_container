@@ -177,12 +177,12 @@ Use the `run_ros_nvidia_container.sh` file to run the docker container.
 
 - Grant executable permission:
     ```bash
-    chmod +x ~/run_ros_nvidia_container.sh
+    chmod +x ~/ros_nvidia_container/run_ros_nvidia_container.sh
     ```
 
 - Run the container:
     ```bash
-    ~/run_ros_nvidia_container.sh
+    ~/ros_nvidia_container/run_ros_nvidia_container.sh
     ```
 
 </br></br>
