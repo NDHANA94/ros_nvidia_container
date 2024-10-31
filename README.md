@@ -1,4 +1,4 @@
-## ROS Docker Container with NVIDIA GPU-Accelerated OpenGL for Gazebo, RViz, and MoveIt
+## ROS Docker Container with NVIDIA GPU-Accelerated OpenGL for Gazebo and RViz
 
 This repo explains how to create a docker container on an Ubuntu host machine with NVIDIA GPU accelerated OpenGL for Gazebo and RViz Graphic rendering for a smooth simulation experience with ROS. 
 
