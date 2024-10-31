@@ -1,0 +1,21 @@
+{
+  "name": "ROS Noetic Development",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "runArgs": [
+    "--gpus", "all",
+    "--env", "DISPLAY=${env:DISPLAY}",
+    "--env", "QT_X11_NO_MITSHM=1",
+    "--volume", "/tmp/.X11-unix:/tmp/.X11-unix:rw", 
+    "--volume", "${env:HOME}}/.Xauthority:/root/.Xauthority",
+    "--device", "/dev/dri:/dev/dri",
+    "--volume", "${localWorkspaceFolder}/volume:/ros_ws",
+    "--env", "NVIDIA_DRIVER_CAPABILITIES=all" ,
+    "--network", "host",
+    "--privileged"
+  ],
+
+  "postCreateCommand": "rosdep update",
+  "remoteUser": "root"
+}
+
