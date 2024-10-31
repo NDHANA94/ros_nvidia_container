@@ -2,6 +2,11 @@
 
 This repo explains how to create a docker container on an Ubuntu host machine with NVIDIA GPU accelerated OpenGL for Gazebo and RViz Graphic rendering for a smooth simulation experience with ROS. 
 
+### OUTLINE
+1. [Host Machine Setup for NVIDIA GPU](#1-host-machine-setup-for-nvidia-gpu)
+2. [Building the Docker Image](#2-building-the-docker-image)
+3. [Run the container](#3-run-the-container)
+4. [Open in VS-Code DevContainer](#4-open-in-vs-code-dev-container)
 
 </br>
 </br>
@@ -187,7 +192,7 @@ Use the `run_ros_nvidia_container.sh` file to run the docker container.
 
 </br></br>
 
-## 4. Open with VS-Code Dev Container:
+## 4. Open in VS-Code Dev Container:
 
 You can use vscode remote extention to open this container.
 
