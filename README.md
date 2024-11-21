@@ -60,9 +60,9 @@ Follow these steps to setup your Ubuntu host machine to enable docker to use the
             </br>
 
 
-2. Install [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html):
+2. Install [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) and `nvidia-docker2:
 
-    -  Configure the production repository:
+    -  Configure the production repository for `nvidia-container-toolkit`:
         ```bash
         curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
         && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
@@ -101,6 +101,12 @@ Follow these steps to setup your Ubuntu host machine to enable docker to use the
 
             - copy/paste the above mentioned configuration.
             - save (ctrl+s) and exit (ctrl+x)
+         
+    - Install `nvidia-docker2`:
+        ```bash
+        sudo apt-get update
+        sudo apt-get install -y nvidia-docker2
+        ```
 
     - Restart the Docker daemon:
         ```bash
